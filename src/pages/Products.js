@@ -3,7 +3,7 @@ import products from "../data";
 import { useState } from "react";
 
 const Products = ({ user }) => {
-  const [userProfil] = useState(user);
+  const [userProfil, setUserProfil] = useState(user);
   return (
     <section className="section">
       <div className="products">
