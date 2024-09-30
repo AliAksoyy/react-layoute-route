@@ -1,7 +1,11 @@
-import React from "react";
-
-const SharedLayout = () => {
-  return <div>SharedLayout</div>;
+import { Outlet } from "react-router-dom";
+import StyledNavbar from "../components/StyledNavbar";
+const Home = () => {
+  return (
+    <>
+      <StyledNavbar />
+      <Outlet />
+    </>
+  );
 };
-
-export default SharedLayout;
+export default Home;
